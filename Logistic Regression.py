@@ -3,6 +3,7 @@ import requests
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.linear_model import LogisticRegression
 from tqdm import tqdm
 
 
@@ -58,8 +59,30 @@ def goal_angle(origin):
     v0 = p0 - p1
     v1 = p2 - p1
 
-    angle = np.abs(np.math.atan2(np.linalg.det([v0, v1]), np.dat(v0, v1)))
+    angle = np.abs(np.math.atan2(np.linalg.det([v0, v1]), np.dot(v0, v1)))
 
     return angle
 
+# Creates new columns in the Data Frame
 
+
+df['distance_to_goal'] = df.apply(lambda row: distance_to_goal(row[['x', 'y']]), axis=1)
+df['goal_angle'] = df.apply(lambda r: goal_angle(r[['x', 'y']]), axis=1)
+
+# Creates filter to remove free kicks and penalties from Data Frame
+shots = df[~df['phase'].isin(['Free Kick', 'Penalty'])]
+
+model = LogisticRegression()
+
+features = shots[['distance_to_goal', 'goal_angle', 'head']]
+labels = shots['outcome']
+
+fit = model.fit(features, labels)
+
+predictions = model.predict_proba(features)[:, 1]
+
+plt.plot(sorted(predictions))
+plt.show()
+
+plt.plot(sorted(shots['statsbomb_xg']))
+plt.show()

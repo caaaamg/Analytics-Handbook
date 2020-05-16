@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6557c3f0-b17d-42a8-80d3-d084cc0bd3ea" name="Default Changelist" comment="Linear Progression&#10;Parsing passing data&#10;Plotting with matplotlib&#10;Linear progression applied with scikit-learn">
+    <list default="true" id="6557c3f0-b17d-42a8-80d3-d084cc0bd3ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linear Regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Linear Regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logistic Regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logistic Regression.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,17 +16,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Panda_Extraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="27">
+              <caret line="12" selection-start-line="12" selection-end-line="36" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Linear Regression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#19#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Linear Regression.py">
+        <entry file="file://$PROJECT_DIR$/Logistic Regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="340">
+              <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
               <folding>
                 <element signature="e#19#34#0" expanded="true" />
               </folding>
@@ -53,14 +65,14 @@
         <option value="$PROJECT_DIR$/pyth.py" />
         <option value="$PROJECT_DIR$/Panda_Extraction.py" />
         <option value="$PROJECT_DIR$/Linear Regression.py" />
+        <option value="$PROJECT_DIR$/Logistic Regression.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="237" />
-    <option name="y" value="-15" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -100,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Linear Regression">
+  <component name="RunManager" selected="Python.Logistic Regression">
     <configuration name="Linear Regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Analytics-handbook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,6 +126,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Linear Regression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Logistic Regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Analytics-handbook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Logistic Regression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,6 +199,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Logistic Regression" />
         <item itemvalue="Python.Linear Regression" />
         <item itemvalue="Python.Panda_Extraction" />
         <item itemvalue="Python.pyth" />
@@ -211,22 +245,36 @@
       <option name="project" value="LOCAL" />
       <updated>1589553539577</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Linear Progression&#10;Comments and tidying up">
+      <created>1589600436055</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589600436055</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Logistic Regression&#10;Predicting shot success&#10;&#10;distance to goal function&#10;goal angle function">
+      <created>1589612845570</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589612845570</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16649105" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.125" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Python Console" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.44967178" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -261,7 +309,9 @@
     <MESSAGE value="URL fetching" />
     <MESSAGE value="Data parsing function" />
     <MESSAGE value="Linear Progression&#10;Parsing passing data&#10;Plotting with matplotlib&#10;Linear progression applied with scikit-learn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Linear Progression&#10;Parsing passing data&#10;Plotting with matplotlib&#10;Linear progression applied with scikit-learn" />
+    <MESSAGE value="Linear Progression&#10;Comments and tidying up" />
+    <MESSAGE value="Logistic Regression&#10;Predicting shot success&#10;&#10;distance to goal function&#10;goal angle function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logistic Regression&#10;Predicting shot success&#10;&#10;distance to goal function&#10;goal angle function" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -272,17 +322,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pyth.py" />
-    <entry file="file://$PROJECT_DIR$/Panda_Extraction.py">
+    <entry file="file://$PROJECT_DIR$/Linear Regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#19#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Linear Regression.py">
+    <entry file="file://$PROJECT_DIR$/Panda_Extraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="27">
+          <caret line="12" selection-start-line="12" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistic Regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
           <folding>
             <element signature="e#19#34#0" expanded="true" />
           </folding>
